@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <!-- Page-header -->
     <header class="page-header">
         <div class="container">
             <nav class="header-nav">
@@ -36,9 +37,77 @@
                     </li>
                 </ul>
             </address>
-        </div>
+            <button class="burger-btn" type="button" aria-label="Menu">
+                <svg class="burger-icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use href="./images/heroicons-solid_menu.svg#icon-heroicons-solid_menu-1" />
+                </svg>
+            </button>
+            </button>
+            <div class="mobile-menu">
+                <div class="mobile-menu-container">
+                    <button class="mobile-menu-close">
+                        <svg class="modal-close-icon" width="8" height="8">
+                            <use href="./images/icons5.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <nav class="mobile-menu-nav">
+                        <ul class="mobile-menu-list">
+                            <li class="mobile-menu-item">
+                                <a class="mobile-menu-link current" href="./index.html">Studio</a>
+                            </li>
+                            <li class="mobile-menu-item">
+                                <a class="mobile-menu-link" href="">Portfolio</a>
+                            </li>
+                            <li class="mobile-menu-item">
+                                <a class="mobile-menu-link" href="">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <address class="mobile-contacts">
+                        <ul class="mobile-contacts-list">
+                            <li>
+                                <a class="mobile-contacts-link blue" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                            </li>
+                            <li>
+                                <a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <ul class="team-social-list">
+                        <li class="team-social-item team-icon">
+                            <a href="https://instagram.com" target="_blank" class="social-link">
+                                <svg class="team-social-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-social-item team-icon">
+                            <a href="https://twitter.com" target="_blank" class="social-link">
+                                <svg class="team-social-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-social-item team-icon">
+                            <a href="https://facebook.com" target="_blank" class="social-link"><svg
+                                    class="team-social-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="team-social-item team-icon">
+                            <a href="https://www.linkedin.com" target="_blank" class="social-link"><svg
+                                    class="team-social-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </header>
     <main class="hero">
+        <!-- Hero-section -->
         <section class="hero-section">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -323,16 +392,16 @@
             </div>
         </section>
     </main>
+    <!-- Page-footer -->
     <footer class="page-footer">
-        <div class="container">
+        <div class="container footer-container">
             <div class="footer-info">
                 <a class="footer-logo logo" href="./index.html">Web<span class="footer-logo-part">Studio</span></a>
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing
-                    &
-                    growth
-                    solutions.
+                    & growth solutions.
                 </p>
             </div>
+            <!-- Social media -->
             <div class="social-footer">
                 <p class="footer-media">Social media</p>
                 <ul class="social-list">
@@ -366,6 +435,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- Subscribe -->
             <div class="footer-subscribe">
                 <p class="footer-media">Subscribe</p>
                 <form class="footer-form">
@@ -381,6 +451,7 @@
             </div>
         </div>
     </footer>
+    <!-- Backdrop is-open -->
     <div class="backdrop is-open">
         <div class="modal">
             <button type="button" class="modal-close">
