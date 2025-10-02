@@ -182,7 +182,8 @@
                 <ul class="card-list">
                     <!-- team card-1 -->
                     <li class="card-item">
-                        <img class="card-img" src="./images/images-1.jpg" alt="Mark Guerrero" width="264" height="260">
+                        <img class="card-img" src="./images/images-1.jpg" srcset="./images/img-1-2x.jpg 2x"
+                            alt="Mark Guerrero" width="264" height="260">
                         <div class="card-box">
                             <h3 class="card-item-title">Mark Guerrero</h3>
                             <p class="card-item-text">Product Designer</p>
@@ -208,7 +209,8 @@
                     </li>
                     <!-- team card-2 -->
                     <li class="card-item">
-                        <img class="card-img" src="./images/images-2.jpg" alt="Tom Ford" width="264" height="260">
+                        <img class="card-img" src="./images/images-2.jpg" srcset="./images/img-2-2x.jpg 2x"
+                            alt="Tom Ford" width="264" height="260">
                         <div class="card-box">
                             <h3 class="card-item-title">Tom Ford</h3>
                             <p class="card-item-text">Frontend Developer</p>
@@ -234,7 +236,8 @@
                     </li>
                     <!-- team card-3 -->
                     <li class="card-item">
-                        <img class="card-img" src="./images/images-3.jpg" alt="Camila Garcia" width="264" height="260">
+                        <img class="card-img" src="./images/images-3.jpg" srcset="./images/img-3-2x.jpg 2x"
+                            alt="Camila Garcia" width="264" height="260">
                         <div class="card-box">
                             <h3 class="card-item-title">Camila Garcia</h3>
                             <p class="card-item-text">Marketing</p>
@@ -260,7 +263,8 @@
                     </li>
                     <!-- team card-4 -->
                     <li class="card-item">
-                        <img class="card-img" src="./images/images-4.jpg" alt="Daniel Wilson" width="264" height="260">
+                        <img class="card-img" src="./images/images-4.jpg" srcset="./images/img-4-2x.jpg 2x"
+                            alt="Daniel Wilson" width="264" height="260">
                         <div class="card-box">
                             <h3 class="card-item-title">Daniel Wilson</h3>
                             <p class="card-item-text">UI Designer</p>
@@ -295,8 +299,20 @@
                     <!--portfolio-1-->
                     <li class="portfolio-item">
                         <div class="portfolio-item-cover">
-                            <img class="portfolio-img" src="./images/images-5.jpg" alt="Banking App" width="360"
-                                height="300">
+                            <picture>
+                                <!-- для мобілки -->
+                                <source srcset="./images/img-5-mob-1x.jpg 1x, ./images/img-5-mob-2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <!-- для планшета -->
+                                <source srcset="./images/img-5-tab-1x.jpg 1x, ./images/img-5-tab-2x.jpg 2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1157px)">
+                                <!-- для десктопа -->
+                                <source srcset="./images/img-5-desk-1x.jpg 1x, ./images/img-5-desk-2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <!-- fallback -->
+                                <img class="portfolio-img" src="./images/images-5.jpg" alt="Banking App" width="360"
+                                    height="300">
+                            </picture>
                             <p class="portfolio-item-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App ·
@@ -311,8 +327,20 @@
                     <!--portfolio-2-->
                     <li class="portfolio-item">
                         <div class="portfolio-item-cover">
-                            <img class="portfolio-img" src=".//images/images-6.jpg" alt="Cashless Payment" width="360"
-                                height="300">
+                            <picture>
+                                <!-- для мобілки -->
+                                <source srcset="./images/img-6-mob-1x.jpg 1x, ./images/img-6-mob-2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <!-- для планшета -->
+                                <source srcset="./images/img-6-tab-1x.jpg 1x, ./images/img-6-tab-2x.jpg 2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1157px)">
+                                <!-- для десктопа -->
+                                <source srcset="./images/img-6-desk-1x.jpg 1x, ./images/img-6-desk-2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <!-- fallback -->
+                                <img class="portfolio-img" src="./images/images-6.jpg" alt="Banking App" width="360"
+                                    height="300">
+                            </picture>
                             <p class="portfolio-item-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App ·
@@ -327,8 +355,20 @@
                     <!--portfolio-3-->
                     <li class="portfolio-item">
                         <div class="portfolio-item-cover">
-                            <img class="portfolio-img" src="./images/images-7.jpg" alt="Meditation App" width="360"
-                                height="300">
+                            <picture>
+                                <!-- для мобілки -->
+                                <source srcset="./images/img-7-mob-1x.jpg 1x, ./images/img-7-mob-2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <!-- для планшета -->
+                                <source srcset="./images/img-7-tab-1x.jpg 1x, ./images/img-7-tab-2x.jpg 2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1157px)">
+                                <!-- для десктопа -->
+                                <source srcset="./images/img-7-desk-1x.jpg 1x, ./images/img-7-desk-2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <!-- fallback -->
+                                <img class="portfolio-img" src="./images/images-7.jpg" alt="Banking App" width="360"
+                                    height="300">
+                            </picture>
                             <p class="portfolio-item-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App ·
@@ -343,8 +383,20 @@
                     <!--portfolio-4-->
                     <li class="portfolio-item">
                         <div class="portfolio-item-cover">
-                            <img class="portfolio-img" src=".//images/images-8.jpg" alt="Taxi Service" width="360"
-                                height="300">
+                            <picture>
+                                <!-- для мобілки -->
+                                <source srcset="./images/img-8-mob-1x.jpg 1x, ./images/img-8-mob-2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <!-- для планшета -->
+                                <source srcset="./images/img-8-tab-1x.jpg 1x, ./images/img-8-tab-2x.jpg 2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1157px)">
+                                <!-- для десктопа -->
+                                <source srcset="./images/img-8-desk-1x.jpg 1x, ./images/img-8-desk-2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <!-- fallback -->
+                                <img class="portfolio-img" src="./images/images-8.jpg" alt="Banking App" width="360"
+                                    height="300">
+                            </picture>
                             <p class="portfolio-item-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App ·
@@ -359,8 +411,20 @@
                     <!--portfolio-5-->
                     <li class="portfolio-item">
                         <div class="portfolio-item-cover">
-                            <img class="portfolio-img" src="./images/images-9.jpg" alt="Screen Illustrations"
-                                width="360" height="300">
+                            <picture>
+                                <!-- для мобілки -->
+                                <source srcset="./images/img-9-mob-1x.jpg 1x, ./images/img-9-mob-2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <!-- для планшета -->
+                                <source srcset="./images/img-9-tab-1x.jpg 1x, ./images/img-9-tab-2x.jpg 2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1157px)">
+                                <!-- для десктопа -->
+                                <source srcset="./images/img-9-desk-1x.jpg 1x, ./images/img-9-desk-2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <!-- fallback -->
+                                <img class="portfolio-img" src="./images/images-9.jpg" alt="Banking App" width="360"
+                                    height="300">
+                            </picture>
                             <p class="portfolio-item-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App ·
@@ -375,8 +439,20 @@
                     <!--portfolio-6-->
                     <li class="portfolio-item">
                         <div class="portfolio-item-cover">
-                            <img class="portfolio-img" src=".//images/images-10.jpg" alt="Online Courses" width="360"
-                                height="300">
+                            <picture>
+                                <!-- для мобілки -->
+                                <source srcset="./images/img-10-mob-1x.jpg 1x, ./images/img-10-mob-2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <!-- для планшета -->
+                                <source srcset="./images/img-10-tab-1x.jpg 1x, ./images/img-10-tab-2x.jpg 2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1157px)">
+                                <!-- для десктопа -->
+                                <source srcset="./images/img-10-desk-1x.jpg 1x, ./images/img-10-desk-2x.jpg 2x"
+                                    media="(min-width: 1158px)">
+                                <!-- fallback -->
+                                <img class="portfolio-img" src="./images/images-10.jpg" alt="Banking App" width="360"
+                                    height="300">
+                            </picture>
                             <p class="portfolio-item-text">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App ·
