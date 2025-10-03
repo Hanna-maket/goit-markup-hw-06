@@ -38,16 +38,24 @@ ol {
 
 a {
   text-decoration: none;
-  color: #2e2f42;
 }
 
 img {
   display: block;
   /* max-width: 100%; */
   object-fit: cover;
-  width: 100%;
+  width: 264px;
   height: auto;
   flex-shrink: 0;
+}
+
+.portfolio-img {
+  display: block;
+  /* прибирає нижній відступ у картинок */
+  width: 100%;
+  /* картинка тягнеться на всю ширину контейнера */
+  height: auto;
+  /* зберігає пропорції */
 }
 
 .logo {
@@ -149,6 +157,7 @@ img {
 
 .card-img {
   display: block;
+  width: 264px;
 }
 
 .hero-section {
@@ -196,7 +205,7 @@ screen and (min-width: 768px) and (min-resolution: 192dpi) {
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url("../images/Dark-bg-tab2x.jpg");
+      url("../images/Dark-bg-tab-2x.jpg");
   }
 }
 
@@ -206,7 +215,7 @@ screen and (min-width: 768px) and (min-resolution: 192dpi) {
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url("../images/Dark-bg-desk.jpg");
+      url("../images/Dark-bg-desk-1x.jpg");
     padding: 188px 0;
   }
 }
@@ -218,7 +227,7 @@ screen and (min-width: 1158px) and (min-resolution: 192dpi) {
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-      url("../images/Dark-bg-desk2x.jpg");
+      url("../images/Dark-bg-desk-2x.jpg");
   }
 }
 
@@ -331,8 +340,8 @@ screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   margin-bottom: 8px;
   text-align: left; */
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11111;
+  font-size: 20px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -366,6 +375,15 @@ screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   background-color: #f4f4fd;
 }
 
+.card-item {
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px;
+  width: 264px;
+  height: 428px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+}
+
 .card-item .container {
   padding: 32px 0;
 }
@@ -380,7 +398,6 @@ screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   background-color: #f4f4fd;
   text-transform: capitalize;
   margin-bottom: 72px;
-  margin-top: 72px;
 }
 
 .card-team .social-link:hover,
@@ -449,6 +466,7 @@ screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   /* gap: 24px; */
   gap: 72px;
   flex-wrap: wrap;
+  width: fit-content;
 }
 
 p {
@@ -542,7 +560,7 @@ p {
   background-color: #FFF;
   border-radius: 0px 0px 4px 4px;
   /* width: calc((100% - 72px) / 4); */
-  width: 100%;
+  width: 264px;
   overflow: hidden;
 }
 
@@ -1335,6 +1353,14 @@ a {
 
 @media screen and (min-width: 768px) {
 
+  .contacts-link {
+    font-size: 12px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
   .nav-list {
     display: flex;
   }
@@ -1356,8 +1382,12 @@ a {
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
-    padding-bottom: 36px;
-    margin: 0 auto 72px;
+    /* margin: 0 auto 72px; */
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    min-width: 496px;
   }
 
 
@@ -1366,7 +1396,7 @@ a {
   }
 
   .advantages-list {
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .advantages-item {
@@ -1374,9 +1404,9 @@ a {
   }
 
   .advantages-item-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-align: left;
@@ -1392,9 +1422,17 @@ a {
 
   .card-list {
     column-gap: 24px;
-    /* горизонталь */
     row-gap: 64px;
-    /* вертикаль */
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-item {
+    width: 264px;
+    /* контейнер = картинка */
+    flex-shrink: 0;
+    /* щоб його не стискало в flex-контейнері */
   }
 
   .card-box {
@@ -1435,6 +1473,10 @@ a {
 
 
 @media screen and (min-width: 1158px) {
+
+  a {
+    text-decoration: none;
+  }
 
   .nav-list {
     display: flex;
