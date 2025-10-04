@@ -340,12 +340,13 @@ screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   margin-bottom: 8px;
   text-align: left; */
   font-weight: 700;
-  font-size: 20px;
+  font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
   margin-bottom: 8px;
+
 }
 
 .advantages-item {
@@ -635,6 +636,9 @@ p {
 
 
 /* Footer */
+.footer-text {
+  text-align: left;
+}
 
 
 .footer-items {
@@ -656,11 +660,6 @@ p {
   background-color: #31d0aa;
 }
 
-.social-icon-footer {
-  fill: #f4f4fd;
-  width: 24px;
-  height: 24px;
-}
 
 .page-footer .footer-items {
   color: #fff;
@@ -755,7 +754,6 @@ p {
   height: 40px;
   background-color: transparent;
   display: flex;
-  gap: 24px;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -782,7 +780,7 @@ p {
 }
 
 .footer-form-btn .social-icon-footer {
-  margin-left: 16px;
+  /* margin-left: 16px; */
   fill: #ffffff;
 }
 
@@ -791,19 +789,21 @@ p {
   padding: 8px 24px;
   height: 40px;
   background: #4d5ae5;
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
   gap: 16px;
-  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
 }
 
 .footer-form-btn:hover {
@@ -1482,9 +1482,24 @@ a {
     display: flex;
   }
 
-  .contacts {
+  .contacts-link {
+    font-size: 16px;
+    flex-direction: row;
+  }
+
+  .contacts-list {
     display: flex;
-    font-style: normal;
+    gap: 40px;
+    /* відстань між елементами */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts {
+    flex-direction: row;
+    /* з планшета в рядок */
+    gap: 40px;
   }
 
   .hero-section {
@@ -1532,8 +1547,12 @@ a {
     padding-right: unset;
   }
 
-  .team-title {
-    margin-top: 120px;
+  .advantages-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
   }
 
   .card-item {
@@ -1642,4 +1661,7 @@ a {
     width: 264px;
   }
 
+  .social-icon-footer {
+    margin-left: 16px;
+  }
 }
